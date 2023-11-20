@@ -3,16 +3,6 @@ import requests
 import datetime
 from twilio.rest import Client
 
-account_sid = "AC4f9352b42cc8e58c70178c4b1a053399"
-auth_token = "3fd87896a2b7e047bdb2f30a5f899d20"
-
-
-endpoint = "https://api.openweathermap.org/data/3.0/onecall?"
-api_key = '86e96866ad99c4279b5cbcfeca0e368e'
-exclude = '&units=imperial&exclude=minutely,hourly'
-applyid = '&appid='+api_key
-parameters = {'Boston':'lat=42.36&lon=-71.18', 'Okemo': 'lat=43.397240&lon=-72.709969', 'MountSnow':'lat=42.967030&lon=-72.921402','Stowe':'lat=44.465340&lon=-72.684303', 'Sunapee': 'lat=43.321190&lon=-72.036340'}
-weekday_name ={0:"Monday",1:"Tuesday",2:"Wednesday",3:"Thursday",4:"Friday",5:"Saturday",6:"Sunday"}
 
 def get_weather_daily():
     try:
